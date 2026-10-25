@@ -79,7 +79,7 @@ jobs:
       - run: npm run test:e2e
       - name: Keep Playwright traces of failures
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: playwright-traces
           path: app/test-results/
